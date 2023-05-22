@@ -146,8 +146,9 @@ A tibble: 7 × 2
 confirmed_cases_top7_outside_china=read_csv("datasets/confirmed_cases_top7_outside_china.csv")
 glimpse(confirmed_cases_top7_outside_china)
 
-ggplot(confirmed_cases_top7_outside_china)+geom_line(aes(date, cum_cases), group=country, col=country)+ylab("Cumulative confirmed cases")
-
-<p> Using confirmed_cases_top7_outside_china, draw a line plot of
-<p> cum_cases vs. date, grouped and colored by country
+ggplot(confirmed_cases_top7_outside_china) +
+  geom_line(aes(date, cum_cases, group = country, color = country)) +
+  ylab("Cumulative confirmed cases")
+   
+<p> Using confirmed_cases_top7_outside_china, draw a line plot of cum_cases vs. date, grouped and colored by country
 ![image](https://github.com/DDDDNNNNNThanh/Covid_19/assets/110702728/15941508-cce0-435f-87ef-c9bf7e57f364)
