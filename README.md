@@ -42,7 +42,7 @@ A tibble: 56 × 2
 <p>The table above shows the cumulative confirmed cases of COVID-19 worldwide by date. Just reading numbers in a table makes it hard to get a sense of the scale and growth of the outbreak. Let's draw a line plot to visualize the confirmed cases worldwide.</p>
   
   <p> Draw a line plot of cumulative cases vs. date
-<p> Label the y-axis
+ Label the y-axis
 ggplot(confirmed_cases_worldwide, aes(date, cum_cases))+geom_line()+ylab("Cumulative confirmed cases")
   ![image](https://github.com/DDDDNNNNNThanh/Covid_19/assets/110702728/504f78fc-7b8d-4800-8c74-535c766c0401)
 
